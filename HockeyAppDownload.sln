@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HockeyAppDownload", "HockeyAppDownload\HockeyAppDownload.csproj", "{B9A324BB-1508-4E14-A29B-77CBE7B44AB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9A324BB-1508-4E14-A29B-77CBE7B44AB1}.Debug|x86.ActiveCfg = Debug|x86
+		{B9A324BB-1508-4E14-A29B-77CBE7B44AB1}.Debug|x86.Build.0 = Debug|x86
+		{B9A324BB-1508-4E14-A29B-77CBE7B44AB1}.Release|x86.ActiveCfg = Release|x86
+		{B9A324BB-1508-4E14-A29B-77CBE7B44AB1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = HockeyAppDownload\HockeyAppDownload.csproj
+	EndGlobalSection
+EndGlobal
