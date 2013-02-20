@@ -7,8 +7,11 @@ using System.Runtime.Serialization.Json;
 using System.Text;
 
 namespace HockeyAppDownload
-{	internal static class WebHelper
+{	
+	internal static class WebHelper
 	{
+		private static DateTime lastRequest = DateTime.Now;
+
 		/// <summary>Does an HTTP get on the supplied URL</summary>
 		public static Task<T> Json<T>(string url)
 		{
@@ -18,6 +21,12 @@ namespace HockeyAppDownload
 		/// <summary>Does an HTTP get if no post data is supplied, otherwise, a post</summary>
 		public static Task<T> Json<T>(string url, string postData)
 		{
+			var diff = DateTime.Now - lastRequest;
+			if (diff.Milliseconds <= 1000) {
+				Console.Write("...");
+				Thread.Sleep(1000 - diff.Milliseconds);
+				lastRequest = DateTime.Now;
+			}
 			var tcs = new TaskCompletionSource<T>();
 			var request = (HttpWebRequest)WebRequest.Create(url);
 			

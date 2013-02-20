@@ -41,6 +41,7 @@
     <Compile Include="HockeyApp.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Csv.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
